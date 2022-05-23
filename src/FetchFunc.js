@@ -29,7 +29,7 @@ const FetchFunc = () => {
                         
                     </tr>
                         {
-                            apiArr.map(item =>
+                            apiArr?.map(item =>
                                 <tr key={item?.id}>
                                     <td  width="400px">Name</td>
                                     <td  width="400px">{item?.name}</td>
