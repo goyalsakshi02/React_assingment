@@ -1,12 +1,14 @@
 import React from "react"
 import {useState,useEffect} from "react" 
 import axios from "axios"
+import NewApp from "./NewApp";
+
 const FetchFunc = () => {
     
     const [apiArr, setApiArr] = useState([]);
     
     useEffect(() => {
-        axios.get("https://newsapi.org/v2/top-headlines/sources?apiKey=baebdb27500542c78c84eb4c5d17d745").then(apiArr=> {
+        axios.get("https://newsapi.org/v2/top-headlines/sources?apiKey=589773f1ae1943cb9ce6fef69f973fb8").then(apiArr=> {
             console.log("data ==>>",apiArr)
             setApiArr(apiArr?.data?.sources)
         }).catch(error => {
@@ -14,11 +16,12 @@ const FetchFunc = () => {
         });
       }, []);
 
+     const name1 =  apiArr?.map((item) => item?.name)
+        console.log("hello",name1)
+
  return(
         <>
-            <div className="name">
-            <h1>Practice Integrating API using fetch</h1>
-            </div>
+           
             <div style={{height:"400px",overflowY:"scroll"}}>
                 <table border='1'>
                     <tr>
@@ -32,11 +35,14 @@ const FetchFunc = () => {
                         {
                             apiArr?.map(item =>
                                 <tr key={item?.id}>
-                                    <td  width="400px">Name</td>
                                     <td  width="400px">{item?.name}</td>
+                                    <td width="400px">name</td>
                                 </tr>
+                            
                             )
+                           
                         }
+                         <tr> <td><NewApp /></td></tr>
                 </table>
             </div>
         </>
