@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import NewApp from './NewApp';
-import FetchFunc from './FetchFunc';
+// import FetchFunc from './FetchFunc';
 function App() {
   return (
     <div className="App">
