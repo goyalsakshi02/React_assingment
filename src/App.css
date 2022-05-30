@@ -14,14 +14,14 @@
 }
 
 .App-header {
-  background-color: #466ebe;
+  background-color:rgb(34, 34, 31);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(186, 59, 59);
 }
 
 .App-link {
@@ -55,14 +55,27 @@ body, html {
     float: left;
     background-color: rosybrown;
     border-collapse: collapse;
+    
 }
 
 .middlepane {
-    width: 50%;
+    width: 40%;
     height: 100%;
     float: left;
-    background-color: royalblue;
+    background-color:white;
     border-collapse: collapse;
+    padding: 20px 30px;
+    margin-left: 35px;
+    position: sticky;
+    top: 15%;
+    left: 20%;
+
+}
+.title{
+  cursor: pointer;
+}
+.date{
+  padding: 0px 0px 10px 0px;
 }
 .rightpane {
   width: 25%;
@@ -71,7 +84,48 @@ body, html {
   float: right;
   background-color: rgb(34, 34, 31);
   border-collapse: collapse;
+  top: 15%;
+  position: sticky;
+    left: 0;
+    right:1%
+}
+.descrip{
+  padding: 30px;
 }
 
+.data {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid red;
+  border-radius: 0.2em;
+  color: red;
+  cursor: pointer;
+  display: flex;
+  align-self: left;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  border-color: rgb(118, 85, 101);
+  color: #fff;
+  box-shadow: 0 0 40px 40px rgb(118, 85, 101), 0 0 0 0 rgb(118, 85, 101);
+  transition: all 150ms ease-in-out;
+
+}
+  
+  
+  .data:hover {
+    box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px white;}
+  :focus {
+    color: #fff;
+    outline: 0;
+  } 
 
 
