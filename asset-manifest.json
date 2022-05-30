@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/reactFetchApi/static/css/main.073c9b0a.css",
-    "main.js": "/reactFetchApi/static/js/main.0f6cb16c.js",
-    "static/js/787.9b477d46.chunk.js": "/reactFetchApi/static/js/787.9b477d46.chunk.js",
-    "static/media/logo.svg": "/reactFetchApi/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/reactFetchApi/index.html",
-    "main.073c9b0a.css.map": "/reactFetchApi/static/css/main.073c9b0a.css.map",
-    "main.0f6cb16c.js.map": "/reactFetchApi/static/js/main.0f6cb16c.js.map",
-    "787.9b477d46.chunk.js.map": "/reactFetchApi/static/js/787.9b477d46.chunk.js.map"
+    "main.css": "/React_assingment/static/css/main.c9374b50.css",
+    "main.js": "/React_assingment/static/js/main.74ee3440.js",
+    "static/js/787.9b477d46.chunk.js": "/React_assingment/static/js/787.9b477d46.chunk.js",
+    "static/media/logo.svg": "/React_assingment/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/React_assingment/index.html",
+    "main.c9374b50.css.map": "/React_assingment/static/css/main.c9374b50.css.map",
+    "main.74ee3440.js.map": "/React_assingment/static/js/main.74ee3440.js.map",
+    "787.9b477d46.chunk.js.map": "/React_assingment/static/js/787.9b477d46.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.0f6cb16c.js"
+    "static/css/main.c9374b50.css",
+    "static/js/main.74ee3440.js"
   ]
 }
