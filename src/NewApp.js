@@ -11,16 +11,16 @@ const NewApp = () => {
   const [fakData, setFakData] = useState("");
 
   useEffect(() => {
-    axios
-      .get(
-        "https://newsapi.org/v2/top-headlines?country=in&apiKey=589773f1ae1943cb9ce6fef69f973fb8"
-      )
-      .then((apiArr) => {
-        setApiArr(apiArr?.data?.articles);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    // axios
+    //   .get(
+    //     "https://newsapi.org/v2/top-headlines?country=in&apiKey=589773f1ae1943cb9ce6fef69f973fb8"
+    //   )
+    //   .then((apiArr) => {
+    //     setApiArr(apiArr?.data?.articles);
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //   });
     fakeApi();
   }, []);
 
