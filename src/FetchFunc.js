@@ -14,11 +14,14 @@ const FetchFunc = () => {
         }).catch(error => {
             console.log(error)
         });
+        // fakeApi();
       }, []);
 
      const name1 =  apiArr?.map((item) => item?.name)
         console.log("hello",name1)
-
+      const fakeApi = () =>{
+        //   setFakeData()  //create state
+      }
  return(
         <>
            
@@ -45,6 +48,9 @@ const FetchFunc = () => {
                          <tr> <td><NewApp /></td></tr>
                 </table>
             </div>
+            {/* {
+                FakeData && <div> </div>
+            } */}
         </>
     
     );
