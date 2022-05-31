@@ -53,7 +53,7 @@ body, html {
     width: 25%;
     height: 100%;
     float: left;
-    background-color: rosybrown;
+    background-color: rgb(14, 2, 2);
     border-collapse: collapse;
     
 }
@@ -74,6 +74,10 @@ body, html {
 .title{
   cursor: pointer;
 }
+.title:hover{
+  color: blue;
+}
+
 .date{
   padding: 0px 0px 10px 0px;
 }
@@ -113,19 +117,25 @@ body, html {
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  border-color: rgb(118, 85, 101);
+  border-color: rgb(240, 201, 201);
   color: #fff;
-  box-shadow: 0 0 40px 40px rgb(118, 85, 101), 0 0 0 0 rgb(118, 85, 101);
-  transition: all 150ms ease-in-out;
+  /* box-shadow: 0 0 40px 40px rgb(240, 201, 201), 0 0 0 0 rgb(240, 201, 201); */
+  transition: all 300ms ease-in-out;
 
 }
   
   
   .data:hover {
-    box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px white;}
+    box-shadow: 0 0 5px 0 white inset, 0 0 5px 4px white;}
   :focus {
     color: #fff;
     outline: 0;
   } 
+  
+  .toppane{
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid red;
+  }
 
 

@@ -46,6 +46,8 @@ const NewApp = () => {
  
   return (
     <div className="container">
+
+      <div className="toppane">NEWS</div>
       
       <div className="leftpane">
           
