@@ -32,8 +32,6 @@ const NewApp = () => {
    
   }
 
-   
-
   function handleCatData(catName) {
     var newArr = apiArr.filter((item) => item?.source?.name == catName);
     setTitle(newArr)
@@ -53,8 +51,7 @@ const NewApp = () => {
           
           <div className="data" onClick={(item) => handleSource(item)} >sources</div>
           
-        
-          {
+         {
               unique.map((item, i) => (
             
             <div className="data" onClick={() => handleCatData(item)} key={i}>
