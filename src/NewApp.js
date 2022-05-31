@@ -23,16 +23,14 @@ const NewApp = () => {
   }, []);
   
   
-    const unique = [...new Set(apiArr.map((item) => item?.source?.name))];
+  const unique = [...new Set(apiArr.map((item) => item?.source?.name))];
 
-    const handleSource = (item , i) =>{
+  const handleSource = (item , i) => {
     const alTitlDate = [ ...new Set(apiArr.map((item) => item))]
-    
-   
     setAllTitle(alTitlDate)
     setTitle([])
    
-    }
+  }
 
    
 
@@ -47,6 +45,7 @@ const NewApp = () => {
     setDescrip(value)
   }
 
+ 
   return (
     <div className="container">
       
@@ -55,29 +54,33 @@ const NewApp = () => {
           <div className="data" onClick={(item) => handleSource(item)} >sources</div>
           
         
-        {
-            unique.map((item, i) => (
-           
-           <div className="data" onClick={() => handleCatData(item)} key={i}>
-                {item}
-            </div>
-        ))}
+          {
+              unique.map((item, i) => (
+            
+            <div className="data" onClick={() => handleCatData(item)} key={i}>
+                  {item}
+              </div>
+          ))}
 
-        </div>
+      </div>
      
      
-     <div className="middlepane">
+      <div className="middlepane">
         
         {allTitle && allTitle.map((value) => <div onClick= {() => handleDescription(value)}><div className="title">{value.title}</div><div className="date">{moment(value.publishedAt).format("DD/MM/YYYY")}</div></div>)} 
      
-        {title && title.map((value) => <div onClick= {() => handleDescription(value)}><div className="title">{value.title}</div><div className="date">{moment(value.publishedAt).format("DD/MM/YYYY")}</div><div></div></div>)}</div>
+        {title && title.map((value) => <div onClick= {() => handleDescription(value)}><div className="title">{value.title}</div><div className="date">{moment(value.publishedAt).format("DD/MM/YYYY")}</div><div></div></div>)}
+        
+      </div>
      
-        <div className="rightpane">
+      <div className="rightpane">
            
-            {descrip && <div><div className="image"><img style={{width:"100%",height:"auto"}}src={descrip.urlToImage}></img></div><div className="descrip">{descrip.description}</div></div>}</div>
+            {descrip && <div><div className="image"><img style={{width:"100%",height:"auto"}}src={descrip.urlToImage}></img></div><div className="descrip">{descrip.description}</div></div>}
+            
+      </div>
     
    
-    </div>
+     </div>
   );
 };
 export default NewApp;
